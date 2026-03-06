@@ -1,0 +1,40 @@
+# Chatterbox TTS Requirements
+# Compatible versions for Python 3.13
+
+# Core ML dependencies
+numpy>=1.26.0
+torch>=2.0.0
+torchaudio>=2.0.0
+
+# Transformers and models
+transformers>=4.36.0
+safetensors>=0.4.0
+huggingface_hub
+
+# Audio processing
+librosa>=0.10.0
+soundfile
+pyloudnorm
+
+# Chatterbox specific
+chatterbox-tts
+resemble-perth>=1.0.0
+s3tokenizer
+conformer>=0.3.2
+diffusers>=0.24.0
+
+# Text processing
+pykakasi>=2.3.0
+spacy-pkuseg
+indic-transliteration
+
+# Bark TTS specific
+bark>=0.1.0
+encodec
+
+# F5-TTS for Hindi TTS
+f5-tts @ git+https://github.com/SWivid/F5-TTS.git
+
+# Utilities
+omegaconf
+requests
