@@ -35,6 +35,9 @@ encodec
 # F5-TTS for Hindi TTS
 f5-tts @ git+https://github.com/SWivid/F5-TTS.git
 
+# Sooktam2 TTS specific
+# Note: Additional dependencies may be needed based on the actual model requirements
+
 # Utilities
 omegaconf
 requests
