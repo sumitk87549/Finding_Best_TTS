@@ -301,3 +301,6 @@ models/sooktam2/sooktam.safetensors
 models/sooktam2/src/f5_tts/infer/examples/multi/story.txt
 models/sooktam2/src/f5_tts/infer/examples/vocab.txt
 models/sooktam2/vocab.txt
+VibeVoice/
+nemo_src/
+svara-tts-inference/
