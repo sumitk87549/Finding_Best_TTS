@@ -1,0 +1,582 @@
+<speak version="1.0"
+  xmlns="http://www.w3.org/2001/10/synthesis"
+  xmlns:mstts="https://www.w3.org/2001/mstts"
+  xml:lang="hi-IN">
+  <voice name="hi-IN-SwaraNeural">
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 1 : PLAIN TEXT — NO PROSODY (baseline test)        -->
+    <!-- ============================================================ -->
+
+    Yeh ek simple sentence hai, bina kisi prosody ke.
+    Iska matlab hai ki TTS engine apne default tone mein bolega.
+    Yaar, ghar pe sab theek hai? Aaj khaana kya bana?
+    Main office se thaka hua aaya hoon, aur neend aa rahi hai.
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 2 : DATES — multiple formats                       -->
+    <!-- ============================================================ -->
+
+    Ab hum dates test karenge.
+    <break time="400ms"/>
+
+    Aaj ki date hai
+    <say-as interpret-as="date" format="dmy">11-03-2026</say-as>.
+    <break time="300ms"/>
+
+    Independence day aata hai
+    <say-as interpret-as="date" format="dm">15-08</say-as> ko.
+    <break time="300ms"/>
+
+    Mera birthday hai
+    <say-as interpret-as="date" format="mdy">07/04/1995</say-as>.
+    <break time="300ms"/>
+
+    Yeh event tha
+    <say-as interpret-as="date" format="ymd">2024-12-25</say-as> ko.
+    <break time="300ms"/>
+
+    Aur ek simple year:
+    <say-as interpret-as="date" format="y">2026</say-as>.
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 3 : NUMBERS, DIGITS, CURRENCY, SYMBOLS             -->
+    <!-- ============================================================ -->
+
+    Ab numbers aur symbols test karte hain.
+    <break time="400ms"/>
+
+    Yeh ek cardinal number hai:
+    <say-as interpret-as="cardinal">4523</say-as>.
+    <break time="300ms"/>
+
+    Phone number digit by digit:
+    <say-as interpret-as="digits">9876543210</say-as>.
+    <break time="300ms"/>
+
+    OTP hai:
+    <say-as interpret-as="digits">482951</say-as>.
+    <break time="300ms"/>
+
+    Rupees mein price:
+    <say-as interpret-as="currency">₹1,49,999</say-as>.
+    <break time="300ms"/>
+
+    Dollar mein:
+    <say-as interpret-as="currency">$4999.99</say-as>.
+    <break time="300ms"/>
+
+    Percentage test:
+    <say-as interpret-as="cardinal">87</say-as> percent students pass hue.
+    <break time="300ms"/>
+
+    Hashtag aur at sign — yeh symbols hain: # aur @.
+    Mere Instagram handle pe follow karo: @hinditech_yaar.
+    <break time="300ms"/>
+
+    Toh total cost thi
+    <say-as interpret-as="currency">$250</say-as>
+    plus taxes.
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 4 : ABBREVIATIONS AND CHARACTERS                   -->
+    <!-- ============================================================ -->
+
+    Ab abbreviations test karte hain.
+    <break time="400ms"/>
+
+    Meri company ka naam hai
+    <say-as interpret-as="characters">IBM</say-as>.
+    <break time="300ms"/>
+
+    Mera employee ID hai
+    <say-as interpret-as="characters">EMP4872</say-as>.
+    <break time="300ms"/>
+
+    WiFi password hai:
+    <say-as interpret-as="characters">AB12XY</say-as>.
+    <break time="300ms"/>
+
+    Yeh
+    <say-as interpret-as="characters">HTML</say-as>
+    aur
+    <say-as interpret-as="characters">CSS</say-as>
+    web development ke liye hote hain.
+    <break time="300ms"/>
+
+    Normal bolne mein: HTML aur CSS. Ab character by character:
+    <say-as interpret-as="characters">HTML</say-as>
+    aur
+    <say-as interpret-as="characters">CSS</say-as>.
+    Fark sunaayi diya?
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 5 : TIME                                           -->
+    <!-- ============================================================ -->
+
+    Time test karte hain.
+    <break time="400ms"/>
+
+    Meeting hai
+    <say-as interpret-as="time" format="hms12">3:30pm</say-as>
+    pe.
+    <break time="300ms"/>
+
+    Train chhoot jaayegi
+    <say-as interpret-as="time" format="hms24">22:45:00</say-as>
+    pe agar late rahe.
+    <break time="300ms"/>
+
+    Office time hai
+    <say-as interpret-as="time" format="hms12">9:00am</say-as>
+    se
+    <say-as interpret-as="time" format="hms12">6:00pm</say-as>
+    tak.
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 6 : EXTREME EMOTIONS — EXCITED / HAPPY            -->
+    <!-- ============================================================ -->
+
+    <prosody rate="fast" pitch="x-high" volume="loud">
+      Bhai bhai bhai! Sun tune yeh suna?!
+      Lottery lag gayi humari!
+      Ek crore rupaye! Ek CRORE!
+      Main toh danga kar dunga aaj!
+      Chal celebrate karte hain, abhi ke abhi!
+    </prosody>
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 7 : EXTREME SADNESS / GRIEF                       -->
+    <!-- ============================================================ -->
+
+    <prosody rate="x-slow" pitch="x-low" volume="soft">
+      Yaar...
+      <break time="600ms"/>
+      woh chale gaye.
+      <break time="800ms"/>
+      Kuch samajh nahi aa raha mujhe.
+      <break time="500ms"/>
+      Itna khali khali lag raha hai.
+      <break time="700ms"/>
+      Kaash... woh abhi bhi yahaan hote.
+    </prosody>
+
+    <break time="900ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 8 : ANGER / FRUSTRATION                           -->
+    <!-- ============================================================ -->
+
+    <prosody rate="fast" pitch="high" volume="x-loud">
+      Maine tumhe kitni baar bola tha!
+      <emphasis level="strong">Kitni</emphasis>
+      baar!
+      Yeh kaam kal tak ho jaana chahiye tha!
+      Aur ab tum mujhe bol rahe ho ki nahi hua?!
+      Yeh bilkul
+      <emphasis level="strong">acceptable</emphasis>
+      nahi hai!
+    </prosody>
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 9 : FEAR / NERVOUSNESS                            -->
+    <!-- ============================================================ -->
+
+    <prosody rate="fast" pitch="high" volume="soft">
+      Main... main nahi jaana chahta wahan.
+      <break time="400ms"/>
+      Kuch toh hai us ghar mein, main feel kar sakta hoon.
+      <break time="300ms"/>
+      Woh awaaz... kahan se aa rahi hai?
+      <break time="600ms"/>
+      <emphasis level="strong">Koi hai wahan.</emphasis>
+    </prosody>
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 10 : SARCASM / DRY HUMOR (slow + flat)            -->
+    <!-- ============================================================ -->
+
+    <prosody rate="slow" pitch="low" volume="medium">
+      Haan bilkul.
+      <break time="400ms"/>
+      Bahut
+      <emphasis level="moderate">shandar</emphasis>
+      kaam kiya tumne.
+      <break time="300ms"/>
+      Sirf teen ghante late aaye, deadline miss ki,
+      aur file galat folder mein save ki.
+      <break time="300ms"/>
+      Truly.
+      <emphasis level="strong">Outstanding.</emphasis>
+    </prosody>
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 11 : WHISPERING / SECRET                          -->
+    <!-- ============================================================ -->
+
+    <prosody volume="x-soft" rate="slow" pitch="low">
+      Shhh.
+      <break time="400ms"/>
+      Yahan koi nahi hai na?
+      <break time="300ms"/>
+      Kal bade sahab resign kar rahe hain.
+      <break time="300ms"/>
+      Kisi ko mat batana, samjhe?
+      <break time="300ms"/>
+      Bilkul kisi ko nahi.
+    </prosody>
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 12 : ROBOTIC / ANNOUNCEMENT STYLE                 -->
+    <!-- ============================================================ -->
+
+    <prosody rate="slow" pitch="x-low" volume="loud">
+      Attention please.
+      <break time="500ms"/>
+      Train number
+      <say-as interpret-as="digits">12301</say-as>
+      <break time="300ms"/>
+      Howrah Rajdhani Express
+      <break time="300ms"/>
+      is arriving on platform number
+      <say-as interpret-as="cardinal">4</say-as>.
+      <break time="400ms"/>
+      Passengers are requested to stand behind the yellow line.
+      <break time="500ms"/>
+      Dhanyavad.
+    </prosody>
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 13 : STORYTELLING — MIXED PROSODY                 -->
+    <!-- ============================================================ -->
+
+    <prosody rate="medium" pitch="medium">
+      Ek baar ki baat hai.
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody rate="slow" pitch="low">
+      Ek chhota sa gaon tha, pahadon ke peechhe.
+      Wahan ek budhiya rehti thi.
+    </prosody>
+    <break time="300ms"/>
+
+    <prosody rate="medium" pitch="medium">
+      Roz subah woh uthti, nadiyan ke paas jaati.
+    </prosody>
+    <break time="300ms"/>
+
+    <prosody rate="fast" pitch="high">
+      Ek din achanak... ek awaaz aayi!
+    </prosody>
+    <break time="500ms"/>
+
+    <prosody rate="x-slow" pitch="x-low" volume="soft">
+      "Budhiya... tera waqt aa gaya hai."
+    </prosody>
+    <break time="600ms"/>
+
+    <prosody rate="fast" pitch="high" volume="loud">
+      Woh bhaagi! Jitna tej ho sakta tha!
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody rate="slow" pitch="medium">
+      Lekin phir usne muda ke dekha.
+      <break time="400ms"/>
+      Woh sirf ek bachcha tha.
+      <break time="300ms"/>
+      Apna khoya hua pota.
+    </prosody>
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 14 : LANGUAGE SWITCHING — HINGLISH               -->
+    <!-- ============================================================ -->
+
+    Ab
+    <lang xml:lang="en-US">language switching</lang>
+    test karte hain.
+    <break time="400ms"/>
+
+    Yaar mera
+    <lang xml:lang="en-US">laptop</lang>
+    ekdum
+    <lang xml:lang="en-US">slow</lang>
+    ho gaya hai.
+    <break time="300ms"/>
+
+    Aaj
+    <lang xml:lang="en-US">presentation</lang>
+    ke liye
+    <lang xml:lang="en-US">slides</lang>
+    banana hai.
+    <break time="300ms"/>
+
+    Meeting mein boss ne bola ki
+    <lang xml:lang="en-US">performance improvement plan</lang>
+    follow karo.
+    <break time="300ms"/>
+
+    Toh ab main
+    <lang xml:lang="en-US">seriously</lang>
+    sochna chahta hoon ki kya
+    <lang xml:lang="en-US">job switch</lang>
+    karna chahiye.
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 15 : EMPHASIS LEVELS COMPARISON                   -->
+    <!-- ============================================================ -->
+
+    Ab emphasis levels ka comparison karte hain.
+    <break time="400ms"/>
+
+    Reduced:
+    <emphasis level="reduced">Yeh kaam aaj karna hai.</emphasis>
+    <break time="400ms"/>
+
+    Normal: Yeh kaam aaj karna hai.
+    <break time="400ms"/>
+
+    Moderate:
+    <emphasis level="moderate">Yeh kaam aaj karna hai.</emphasis>
+    <break time="400ms"/>
+
+    Strong:
+    <emphasis level="strong">Yeh kaam aaj karna hai.</emphasis>
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 16 : RATE EXTREMES                                -->
+    <!-- ============================================================ -->
+
+    Rate test karte hain.
+    <break time="400ms"/>
+
+    <prosody rate="x-slow">
+      Yeh bahut dheere bol rahi hoon. Har shabd sunaai de raha hai?
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody rate="slow">
+      Ab thoda tez, lekin phir bhi dheera.
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody rate="medium">
+      Yeh normal speed hai, jaise hum baat karte hain.
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody rate="fast">
+      Ab tez bol rahi hoon, jaise rush mein ho koi.
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody rate="x-fast">
+      Yeh sabse tez hai, bilkul auctioneer ki tarah, sun sakte ho kya mujhe?
+    </prosody>
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 17 : PITCH EXTREMES                               -->
+    <!-- ============================================================ -->
+
+    Pitch test karte hain.
+    <break time="400ms"/>
+
+    <prosody pitch="x-low">
+      Yeh sabse neechi awaaz hai. Bilkul deep.
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody pitch="low">
+      Thodi neechi awaaz, serious tone.
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody pitch="medium">
+      Yeh normal pitch hai.
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody pitch="high">
+      Aaawaz thodi oonchi ho gayi!
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody pitch="x-high">
+      Yeh sabse oonchi pitch hai! Bilkul cartoon jaisi!
+    </prosody>
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 18 : VOLUME EXTREMES                              -->
+    <!-- ============================================================ -->
+
+    Volume test karte hain.
+    <break time="400ms"/>
+
+    <prosody volume="x-soft">
+      Yeh bahut dheeme bol rahi hoon, kaan lagao.
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody volume="soft">
+      Thodi dheemi awaaz.
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody volume="medium">
+      Normal volume.
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody volume="loud">
+      Ab zor se bol rahi hoon!
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody volume="x-loud">
+      YEH SABSE LOUD HAI! SUNAAYI DE RAHA HAI NA?!
+    </prosody>
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 19 : ORDINAL NUMBERS                              -->
+    <!-- ============================================================ -->
+
+    Ordinal numbers test karte hain.
+    <break time="400ms"/>
+
+    Race mein
+    <say-as interpret-as="ordinal">1</say-as>
+    position par aaya.
+    <break time="300ms"/>
+
+    Woh
+    <say-as interpret-as="ordinal">3</say-as>
+    floor pe rehte hain.
+    <break time="300ms"/>
+
+    Yeh meri
+    <say-as interpret-as="ordinal">10</say-as>
+    koshish hai.
+
+    <break time="800ms"/>
+
+
+    <!-- ============================================================ -->
+    <!--  SECTION 20 : FINAL MIXED STRESS TEST — EVERYTHING COMBINED -->
+    <!-- ============================================================ -->
+
+    <prosody rate="medium" pitch="medium">
+      Ab ek final test.
+    </prosody>
+    <break time="500ms"/>
+
+    <prosody rate="slow" pitch="low">
+      Yaar, main tumhe ek baat batata hoon.
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody rate="medium">
+      Aaj date thi
+      <say-as interpret-as="date" format="dmy">11-03-2026</say-as>.
+      Aur time tha
+      <say-as interpret-as="time" format="hms12">7:30pm</say-as>.
+    </prosody>
+    <break time="300ms"/>
+
+    <prosody rate="fast" pitch="high" volume="loud">
+      Aur usne kya kiya? Bill aaya
+      <say-as interpret-as="currency">$220</say-as>!
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody rate="slow" pitch="x-low" volume="x-soft">
+      Maine socha...
+      <break time="500ms"/>
+      yeh
+      <emphasis level="strong">galat</emphasis>
+      tha.
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody rate="x-fast" pitch="high">
+      Toh main seedha gaya manager ke paas aur bola ki yeh
+      <lang xml:lang="en-US">unacceptable</lang>
+      hai aur mujhe
+      <say-as interpret-as="currency">$220</say-as>
+      wapas chahiye!
+    </prosody>
+    <break time="500ms"/>
+
+    <prosody rate="slow" pitch="medium" volume="soft">
+      Aur jaante ho kya hua?
+      <break time="600ms"/>
+      Unhone
+      <emphasis level="strong">maan liya.</emphasis>
+    </prosody>
+    <break time="400ms"/>
+
+    <prosody rate="medium" pitch="medium" volume="medium">
+      Yeh tha humara
+      <say-as interpret-as="characters">TTS</say-as>
+      test. Ummeed hai ki aapko yeh
+      <lang xml:lang="en-US">audio</lang>
+      pasand aayi.
+      <break time="300ms"/>
+      Dhanyavad!
+    </prosody>
+
+  </voice>
+</speak>
